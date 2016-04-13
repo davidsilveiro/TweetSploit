@@ -108,7 +108,7 @@ def main():
 	   you an easy way to make use of the Twitter API")
 
     print("Author of Twython Suite: David Silveiro          \n \
-    	   Auther of Twython Library: ------------")
+    	   Auther of Twython Module: ryanmcgrath")
 
     print("Enter the number matching the option             \n \
     	   \n 1) Follow \n 2) Unfollow \n 3) Favorite          \
