@@ -11,7 +11,7 @@ twitter = Twython(app_key, app_secret, \
 	  oauth_token, oauth_token_secret)
 
 
-def follow(user):
+def follow(username):
     
 
     """ So we loop through our the 'EXAMPLE' users followers    """
@@ -22,7 +22,7 @@ def follow(user):
 
 
     amount         = raw_input("Amount of users to follow: ")
-    followers      = twitter.get_friend_ids(screen_name=user)
+    followers      = twitter.get_friend_ids(screen_name=username)
     amount_Counter = 0
     
     while amount_Counter <= amount:
@@ -43,7 +43,7 @@ def follow(user):
 def unfollow(username):
 
     amount         = raw_input("Amount of users to follow: ")
-    followers      = twitter.get_friend_ids(screen_name=user)
+    followers      = twitter.get_friend_ids(screen_name=username)
     amount_Counter = 0
 
     while amount_Counter <= amount:
@@ -64,7 +64,7 @@ def unfollow(username):
 def favorite(hashtag):
 
     amount         = raw_input("Amount of posts to favorite: ")
-    followers      = twitter.get_friend_ids(screen_name=user)
+    followers      = twitter.get_friend_ids(screen_name=hashtag)
     amount_Counter = 0
 
     while amount_Counter <= amount:
@@ -107,7 +107,7 @@ def main():
     print("Welcome to the Twython suite, a wrapper offering \n \
 	   you an easy way to make use of the Twitter API")
 
-    print("Author of Twython Suite: David Silveiro          \n \
+    print("Author of Tweetsploit   : David Silveiro          \n \
     	   Auther of Twython Module: ryanmcgrath")
 
     print("Enter the number matching the option             \n \
