@@ -57,13 +57,13 @@ def unfollow(username):
                 print e
                 exit()
 
-    print("Finished following %s followers"% user)
+    print("Finished unfollowing %s followers"% user)
 
 
 
 def favorite(hashtag):
 
-    amount         = raw_input("Amount of users to follow: ")
+    amount         = raw_input("Amount of posts to favorite: ")
     followers      = twitter.get_friend_ids(screen_name=user)
     amount_Counter = 0
 
@@ -71,7 +71,7 @@ def favorite(hashtag):
         for ids in followers['ids']:
 
             try:
-                t.create_friendship(user_id=ids)
+                t.create_favorite(user_id=ids)
                 sleep(1)
                 amount_Counter += 1
             except KeyboardInterrupt, TwythonError:
