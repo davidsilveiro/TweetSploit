@@ -95,7 +95,7 @@ def message(username):
         for tweet in search_results["statuses"]:
             try:
                 twitter.create_favorite(id = tweet["id_str"])
-                time.sleep(0.5)
+                time.sleep(5)
             except KeyboardInterrupt, TwythonError:
                 print e
                 exit()
