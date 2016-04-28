@@ -36,7 +36,7 @@ def follow(username):
                
                 exit()
 
-    print("Finished following %s followers"% user)
+    print("Finished following %s followers"% username)
     
 
 
@@ -57,7 +57,7 @@ def unfollow(username):
                 print e
                 exit()
 
-    print("Finished unfollowing %s followers"% user)
+    print("Finished unfollowing %s followers"% username)
 
 
 
@@ -78,7 +78,7 @@ def favorite(hashtag):
                 print e
                 exit()
 
-    print("Finished following %s followers"% user)
+    print("Finished favoriting posts under %s "% hashtag)
 
 
 def message(username):
