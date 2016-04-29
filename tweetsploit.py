@@ -83,9 +83,8 @@ def favorite(hashtag):
 
 def message(username):
 
-    status         = raw_input("Hashtag to favorite posts from: ")
     amount         = raw_input("Amount of users to follow: ")
-    search_results = twitter.search(q=status, count=amount)
+    search_results = twitter.search(q=username, count=amount)
     amount_Counter = 0
 
     
@@ -99,6 +98,8 @@ def message(username):
             except KeyboardInterrupt, TwythonError:
                 print e
                 exit()
+                
+    print("Finished messaging the followers of %s"% username)            
 
 
 
