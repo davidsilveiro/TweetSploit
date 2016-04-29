@@ -116,25 +116,27 @@ def main():
            \n 4) Message ")
 
 
-    option = bin(int(raw_input("option: ")))
+    option = int(raw_input("option: "))
 
 
 
-    if option == '0b1':
+    if option == 1:
            
 
-        username = raw_input("Username: ")
+        username      = raw_input("Username: ")
         follow(username)
 
-    elif option  == '0b10':
+    elif option  == 2:
   
+        self_Username = raw_input("Your username: ")
         unfollow()
 
-    elif option  == '0b11':
+    elif option  == 3:
 
+        hashtag       = raw_input("Hashtag: ")
         favorite()
 
-    elif option  == '0b100':
+    elif option  == 4:
 
         message()
 
