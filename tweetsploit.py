@@ -129,16 +129,17 @@ def main():
     elif option  == 2:
   
         self_Username = raw_input("Your username: ")
-        unfollow()
+        unfollow(self_Username)
 
     elif option  == 3:
 
         hashtag       = raw_input("Hashtag: ")
-        favorite()
+        favorite(hashtag)
 
     elif option  == 4:
 
-        message()
+        self_Username = raw_input("Hashtag: ")
+        message(self_Username)
 
     else:
         print("Error, option %s is not recognised!"% option)
