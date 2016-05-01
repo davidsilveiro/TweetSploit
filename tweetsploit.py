@@ -33,7 +33,6 @@ def follow(username):
                 sleep(1)
                 amount_Counter += 1
             except KeyboardInterrupt, TwythonError:
-               
                 exit()
 
     print("Finished following %s followers"% username)
@@ -54,7 +53,6 @@ def unfollow(username):
                 sleep(1)
                 amount_Counter += 1
             except KeyboardInterrupt, TwythonError:
-                print e
                 exit()
 
     print("Finished unfollowing %s followers"% username)
@@ -75,7 +73,6 @@ def favorite(hashtag):
                 sleep(1)
                 amount_Counter += 1
             except KeyboardInterrupt, TwythonError:
-                print e
                 exit()
 
     print("Finished favoriting posts under %s "% hashtag)
@@ -96,7 +93,6 @@ def message(username):
                 twitter.create_favorite(id = tweet["id_str"])
                 time.sleep(5)
             except KeyboardInterrupt, TwythonError:
-                print e
                 exit()
                 
     print("Finished messaging the followers of %s"% username)            
