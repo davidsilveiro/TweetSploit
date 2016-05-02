@@ -37,8 +37,7 @@ def follow(username):
 
     print("Finished following %s followers"% username)
     
-
-
+    
 def unfollow(username):
 
     amount         = raw_input("Amount of users to follow: ")
@@ -56,8 +55,7 @@ def unfollow(username):
                 exit()
 
     print("Finished unfollowing %s followers"% username)
-
-
+    
 
 def favorite(hashtag):
 
@@ -84,11 +82,9 @@ def message(username):
     search_results = twitter.search(q=username, count=amount)
     amount_Counter = 0
 
-    
-
-
     while amount_counter <= amount: 
         for tweet in search_results["statuses"]:
+        	
             try:
                 twitter.create_favorite(id = tweet["id_str"])
                 time.sleep(5)
@@ -112,14 +108,22 @@ def main():
            \n 4) Message ")
 
 
-    option = int(raw_input("option: "))
+    try:
+        twitter = Twython(app_key, app_secret, \
+	oauth_token, oauth_token_secret)
+	
+    except:
+    	print("Keys might be invalid")
+
+
+    option = int(raw_input("option:               "))
 
 
 
     if option == 1:
            
 
-        username      = raw_input("Username: ")
+        username      = raw_input("Username:      ")
         follow(username)
 
     elif option  == 2:
@@ -129,12 +133,12 @@ def main():
 
     elif option  == 3:
 
-        hashtag       = raw_input("Hashtag: ")
+        hashtag       = raw_input("Hashtag:       ")
         favorite(hashtag)
 
     elif option  == 4:
 
-        self_Username = raw_input("Hashtag: ")
+        self_Username = raw_input("Hashtag:       ")
         message(self_Username)
 
     else:
@@ -142,4 +146,4 @@ def main():
 
 
 if __name__ == "__main__":
-	main()
+    main()
