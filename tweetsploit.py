@@ -108,13 +108,6 @@ def main():
            \n 4) Message ")
 
 
-    try:
-        twitter = Twython(app_key, app_secret, \
-	oauth_token, oauth_token_secret)
-	
-    except:
-    	print("Keys might be invalid")
-
 
     option = int(raw_input("option:               "))
 
