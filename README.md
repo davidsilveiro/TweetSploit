@@ -3,9 +3,10 @@ Tweetsploit allows for a nice and simple framework, making use of the twitter AP
 
 Options available:
 
-    Mass sending of messages to all your followers
-    Auto favouriting posts under a hashtag or user (Allows for a list)
-    Auto unfollow people who don't follow you
+    1) Mass sending of messages to all your followers
+    2) Auto favouriting posts under a hashtag or user (Allows for a list)
+    3) Auto unfollow people who don't follow you
+    4) Auto follow users
     
 
 Example:
