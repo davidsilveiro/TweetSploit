@@ -91,15 +91,15 @@ def message(username):
 
 def main():
 
-    print("Welcome to the Twython suite, a wrapper offering \n \
+    print("Welcome to the Twython suite, a wrapper offering  \n\
 	   you an easy way to make use of the Twitter API")
 
-    print("Author of Tweetsploit   : David Silveiro          \n \
+    print("Author of Tweetsploit   : David Silveiro          \n\
     	   Auther of Twython Module: ryanmcgrath")
 
-    print("Enter the number matching the option             \n \
-    	   \n 1) Follow \n 2) Unfollow \n 3) Favorite          \
-           \n 4) Message ")
+    print("Enter the number matching the option             \n\
+    	   \n 1) Follow \n 2) Unfollow \n 3) Favorite         \
+           \n 4) Message\n 5) BOT MODE (eta 24 hours)        ")
 
 
 
