@@ -8,6 +8,8 @@ Options available:
     3) Auto unfollow people who don't follow you
     4) Auto follow users
     
+    5) ---> BOTMODE <---
+    
 
 Example:
 
