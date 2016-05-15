@@ -12,14 +12,6 @@ twitter = Twython(app_key, app_secret, \
 
 
 def follow(username):
-    
-
-    """ So we loop through our the 'EXAMPLE' users followers    """
-    """ and we proceed to fetch their ids, and finish off by    """
-    """ wishing them a nice day. Also, the reason we wait for   """
-    """ 180 seconds is because this sort of timing seemed to    """
-    """ not irritate the hell out of Twitter's api limits.      """
-
 
     amount         = raw_input("Amount of users to follow: ")
     followers      = twitter.get_friend_ids(screen_name=username)
