@@ -9,8 +9,4 @@ Options available:
     4) Auto follow users
     
     5) ---> BOTMODE <---
-    
 
-Example:
-
-  
