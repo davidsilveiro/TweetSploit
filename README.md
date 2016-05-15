@@ -8,5 +8,5 @@ Options available:
     3) Auto unfollow people who don't follow you
     4) Auto follow users
     
-    5) ---> BOTMODE <---
+    5) ---> BOTMODE <--- (Under development; ETA 24 hours)
 
