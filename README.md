@@ -4,6 +4,10 @@ It makes twitter marketing a little easier from my experience, as well as gainin
 
 More to come, enjoy for now ^_^!
 
+Requirments:
+
+    pip install twython
+
 Options available:
 
     1) Mass sending of messages to all your followers
