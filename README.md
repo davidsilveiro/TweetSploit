@@ -1,6 +1,5 @@
-# TweetSploit
+# TweetSploit - Marketing Suite
 Tweetsploit allows for a nice and simple framework, making use of the twitter API and Twython.
-It makes twitter marketing a little easier from my experience, as well as gaining followers.
 
 More to come, enjoy for now ^_^!
 
