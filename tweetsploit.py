@@ -72,7 +72,7 @@ def favorite(hashtag):
 
 def message(username):
 
-    amount         = raw_input("Amount of users to follow: ")
+    amount         = raw_input("Amount of users to message: ")
     search_results = twitter.search(q=username, count=amount)
     amount_Counter = 0
 
@@ -80,7 +80,7 @@ def message(username):
         for tweet in search_results["statuses"]:
         	
             try:
-                twitter.create_favorite(id = tweet["id_str"])
+                twitter.create_favorite(id = tweet["id_str"]) <--- needs fix
                 time.sleep(5)
             except KeyboardInterrupt, TwythonError:
                 exit()
